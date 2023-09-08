@@ -286,3 +286,48 @@ footer{
     width: 30%;
   }
 }
+
+@media screen and (max-width: 650px){
+    .profile-image-container {
+      top: -390px;
+      width: 75%;
+      margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:387px){
+  .about-us{
+    text-align: center;
+  }
+
+  .about-us h2{
+    font-size: 4rem;
+  }
+
+  .left-container, .right-container{
+    width: 100%;
+  }
+
+  .profile-image-container{
+    top: 55px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .logo-footer img{
+    width: 45%;
+    margin: 15px 0;
+  }
+
+  .email{
+    width: 70%;
+  }
+
+  footer .footer:nth-child(3) p, footer .footer:nth-child(2) p{
+    border-bottom: 1px solid;
+  }
+
+  .footer{
+    margin-bottom: 35px;
+  }
+}
