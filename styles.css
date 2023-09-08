@@ -1,0 +1,288 @@
+body{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #176B87;
+}
+
+.nav-container{
+    background-color: #053B50;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo{
+    width: 20%;
+    text-align: center;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 40%;
+    margin: 10px 0;
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+}
+
+.nav-container ul li a:hover{
+    background-color: #176B87;
+}
+
+.nav-container ul{
+    list-style-type: none;
+    width: 80%;
+    text-align: right;
+}
+.nav-container li{
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .menu-toggle{
+    display: none;
+  }
+
+  .container{
+    padding: 5rem 10rem;
+  }
+
+  .left-container, .right-container{
+    width: 49%;
+    display: inline-block;
+  }
+
+  .right-container{
+    position: relative;
+  }
+
+  .profile-image-container{
+    position: relative;
+    top: -205px;
+  }
+
+  .right-container img{
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .circle{
+    height: 100%;
+    width: 100%;
+    background-color: #64CCC5;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: -45px;
+    z-index: -1;
+  }
+
+  .about-us{
+    font-size: 20px;
+  }
+
+  .about-us h2{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .skyblue{
+    color: #64CCC5;
+  }
+
+  .about-details{
+    margin-bottom: 70px;
+  }
+
+  button{
+    font-size: 20px;
+    background: #176B87;
+    color: white;
+    font-weight: 700;
+    padding: 25px 35px;
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+    padding: 10px;
+    color: #053B50;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #053B50;
+  }
+  .footer{
+    width: 25%;
+  }
+
+  footer li{
+    padding: 10px 0;
+  }
+
+  .logo-footer{
+    text-align: center;
+  }
+
+  .logo-footer img{
+    border-radius: 50%;
+  }
+
+  .social-media{
+    text-align: center;
+  }
+
+  .fa-brands, .fab {
+    margin: 0 10px;
+}
+
+.support ul, .brand ul{
+  padding: 0;
+  list-style: none;
+}
+
+.support p, .brand p{
+  color: #64CCC5;
+}
+
+footer{
+  background-color: #EEEEEE;
+}
+
+.email{
+  border: none;
+  border-bottom: 1px solid #64CCC5;
+  margin: 35px 0;
+  background-color: transparent;
+  width: 90%;
+}
+
+  @media screen and (max-width: 1034px) {
+
+    .nav-container ul{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-container   ul li{
+        padding: 10px 0;
+    }
+
+    .nav-container ul li a {
+
+        padding: 15px 40px;
+
+    }
+
+    .nav-container ul li:first-child a, .nav-container ul li:nth-child(2) a{
+        border-bottom: 1px solid white;
+        
+    }
+
+
+    .nav-container, .logo, .nav-container li{
+        display: block;
+        width: 100%;
+    }
+
+    .logo img{
+        width: 15%;
+    }
+
+   
+  }
+
+
+@media screen and (max-width: 991px) {
+  .profile-image-container{
+    top:-315px;
+  }
+}
+
+/* Your existing CSS code here */
+
+@media screen and (max-width: 925px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .nav-container {
+      display: none;
+  }
+
+  .nav-container.show-menu {
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #053b50;
+      transition: left 0.3s ease-in-out; /* Adjust the timing function for the desired effect */
+      z-index: 1;
+  }
+
+  .nav-container.show-menu li {
+      display: block;
+      text-align: center;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-6px, -8px);
+  }
+
+  .container {
+      padding: 5rem;
+  }
+
+  footer {
+      display: block;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .footer {
+      width: 100%; /* Full width for the footer */
+  }
+
+  .footer p {
+      margin: 10px 0;
+  }
+
+  .email {
+      width: 30%;
+  }
+
+  .button-signup{
+    width: 30%;
+  }
+}
