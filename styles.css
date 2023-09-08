@@ -330,4 +330,8 @@ footer{
   .footer{
     margin-bottom: 35px;
   }
+  button{
+      padding: 25px;
+  }
+
 }
