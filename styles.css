@@ -285,6 +285,20 @@ footer{
   .button-signup{
     width: 30%;
   }
+
+  footer .footer:nth-child(3) p, footer .footer:nth-child(2) p{
+    border-bottom: 1px solid;
+  }
+
+  .footer{
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  button{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 650px){
@@ -295,7 +309,7 @@ footer{
   }
 }
 
-@media screen and (max-width:387px){
+@media screen and (max-width:540px){
   .about-us{
     text-align: center;
   }
@@ -320,18 +334,32 @@ footer{
   }
 
   .email{
-    width: 70%;
+    width: 50%;
   }
 
-  footer .footer:nth-child(3) p, footer .footer:nth-child(2) p{
-    border-bottom: 1px solid;
-  }
 
-  .footer{
-    margin-bottom: 35px;
-  }
+
   button{
-      padding: 25px;
+    padding: 25px;
+  }
+}
+
+@media screen  and (max-width: 360px) {
+  .email{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .email{
+    width: 95%;
   }
 
+  button{
+    width: 90%;
+  }
+
+  .button-signup{
+    width: 100%;
+  }
 }
