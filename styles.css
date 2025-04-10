@@ -41,15 +41,15 @@ body.dark-mode .contact-item {
   color: #f1f1f1;
 }
 
-body.dark-mode #about, body.dark-mode #projects{
+body.dark-mode #about,
+body.dark-mode #projects {
   background: linear-gradient(135deg, #333, #555);
   color: white;
 }
 
-body.dark-mode #contact h2{
+body.dark-mode #contact h2 {
   color: white;
 }
-
 
 header {
   background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
@@ -164,18 +164,17 @@ section {
   color: #555;
 }
 
-.download-btn:hover{
-  border-bottom: 2px solid #555 ;
+.download-btn:hover {
+  border-bottom: 2px solid #555;
 }
 
-body.dark-mode .download-btn{
+body.dark-mode .download-btn {
   color: #fff;
 }
 
-body.dark-mode .download-btn:hover{
-  border-bottom: 2px solid #fff ;
+body.dark-mode .download-btn:hover {
+  border-bottom: 2px solid #fff;
 }
-
 
 /* Particle Animation */
 .particle {
@@ -196,7 +195,6 @@ body.dark-mode .download-btn:hover{
     opacity: 0;
   }
 }
-
 
 @keyframes fadeInUp {
   from {
@@ -261,7 +259,7 @@ h3 {
   padding: 20px;
 }
 
-body.dark-mode .blog-container{
+body.dark-mode .blog-container {
   color: white;
 }
 
@@ -272,7 +270,7 @@ body.dark-mode .blog-container{
   text-decoration: underline;
 }
 
-.blog-container h2::after{
+.blog-container h2::after {
   display: none;
 }
 
@@ -308,7 +306,6 @@ body.dark-mode .blog-container{
 .blog-item a:hover {
   text-decoration: underline;
 }
-
 
 section#projects {
   max-width: 100%;
@@ -476,7 +473,7 @@ section#projects {
   margin-top: 10px;
 }
 
-body.dark-mode .contact-container{
+body.dark-mode .contact-container {
   background-color: #555;
   padding: 2rem;
   border-radius: 10px;
@@ -504,7 +501,7 @@ label {
   text-align: left;
 }
 
-body.dark-mode label{
+body.dark-mode label {
   color: #fff;
 }
 
@@ -564,6 +561,12 @@ textarea {
 }
 
 /* Dark Mode Styles */
+.dark-mode,
+.light-mode {
+  height: 24px;
+  width: 24px;
+}
+
 .dark-mode .contact {
   background: #222;
   color: white;
@@ -591,4 +594,91 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+
+  .toggle-screen {
+    width: 55px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    width: 25rem;
+    font-size: 25px;
+  }
+
+  .toggle-screen {
+    width: 35px;
+  }
+
+  .dark-mode,
+  .light-mode {
+    height: 16px;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    width: 20rem;
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    width: 15rem;
+    font-size: 15px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #about p {
+    font-size: 10px;
+  }
+
+  .hero-content a {
+    font-size: 10px;
+  }
+
+  .project-card p,
+  .tags {
+    font-size: 10px;
+  }
+
+  .project-card a {
+    font-size: 10px;
+  }
+
+  .blog-container h2 {
+    font-size: 1.2em;
+  }
+
+  .blog-item h3 {
+    font-size: 1em;
+  }
 }
